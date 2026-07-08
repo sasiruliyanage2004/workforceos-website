@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>WorkforceOS | The Future of Remote Work</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Sora:wght@600;800&amp;family=Space+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -245,7 +246,10 @@ animate();
 <!-- Navigation -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-[20px] border-b border-white/15 shadow-[0_0_15px_rgba(0,225,171,0.2)]">
 <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="font-display-lg text-display-lg-mobile md:text-headline-md tracking-tighter text-primary">WorkforceOS</div>
+<div class="flex items-center gap-3">
+    <img src="favicon.ico" alt="WorkforceOS Logo" class="w-8 h-8 md:w-10 md:h-10">
+    <div class="font-display-lg text-display-lg-mobile md:text-headline-md tracking-tighter text-primary">WorkforceOS</div>
+</div>
 <button onclick="document.getElementById('download-section').scrollIntoView({behavior: 'smooth'})" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-bold scale-95 active:scale-90 transition-transform hover:shadow-[0_0_15px_rgba(0,225,171,0.4)]">
                 Download Agent
             </button>

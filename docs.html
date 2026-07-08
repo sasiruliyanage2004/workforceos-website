@@ -1,9 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WorkforceOS | Technical Documentation</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Sora:wght@600;800&amp;family=Space+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#5DFFD6',
+                    'primary-container': '#005141',
+                    'on-primary-container': '#5DFFD6',
+                    'primary-fixed': '#5DFFD6',
+                    'on-primary-fixed': '#002019',
+                    'primary-fixed-dim': '#00E1AB',
+                    secondary: '#B0CCC3',
+                    'secondary-container': '#324B44',
+                    background: '#0E1513',
+                    'on-background': '#DFE4E1',
+                    surface: '#111A17',
+                    'surface-variant': '#3F4945',
+                    'on-surface-variant': '#BFC9C4',
+                    error: '#FFB4AB'
+                },
+                fontFamily: {
+                    'display-lg': ['Sora', 'sans-serif'],
+                    'headline-md': ['Sora', 'sans-serif'],
+                    'body-lg': ['Inter', 'sans-serif'],
+                    'body-md': ['Inter', 'sans-serif'],
+                    'label-mono': ['Space Mono', 'monospace'],
+                }
+            }
+        }
+    }
+</script>
+<style>
+    body { background-color: #0E1513; }
+    .glass-card {
+        background: rgba(17, 26, 23, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+    }
+</style>
 </head>
 <body class="bg-background text-on-background antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
     <!-- Navbar -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-[20px] border-b border-white/15 shadow-[0_0_15px_rgba(0,225,171,0.2)]">
         <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
-            <a href="index.html" class="font-display-lg text-display-lg-mobile md:text-headline-md tracking-tighter text-primary hover:text-primary-fixed-dim transition-all">WorkforceOS</a>
+            <div class="flex items-center gap-3">
+                <img src="favicon.ico" alt="WorkforceOS Logo" class="w-8 h-8 md:w-10 md:h-10">
+                <a href="index.html" class="font-display-lg text-display-lg-mobile md:text-headline-md tracking-tighter text-primary hover:text-primary-fixed-dim transition-all">WorkforceOS</a>
+            </div>
             <a href="index.html" class="text-secondary hover:text-primary transition-all font-body-md">Back to Home</a>
         </nav>
     </header>
@@ -109,7 +160,7 @@
         <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="font-display-lg text-2xl tracking-tighter text-on-surface-variant opacity-50">WorkforceOS</div>
             <div class="font-label-mono text-on-surface-variant opacity-50 uppercase tracking-widest text-xs">
-                © 2026 WorkforceOS. Neural Protocol Active.
+                Â© 2026 WorkforceOS. Neural Protocol Active.
             </div>
         </div>
     </footer>
