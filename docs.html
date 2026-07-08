@@ -1,0 +1,117 @@
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-[20px] border-b border-white/15 shadow-[0_0_15px_rgba(0,225,171,0.2)]">
+        <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+            <a href="index.html" class="font-display-lg text-display-lg-mobile md:text-headline-md tracking-tighter text-primary hover:text-primary-fixed-dim transition-all">WorkforceOS</a>
+            <a href="index.html" class="text-secondary hover:text-primary transition-all font-body-md">Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="relative z-10 pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div class="flex flex-col md:flex-row gap-12">
+            <!-- Sidebar -->
+            <aside class="w-full md:w-64 shrink-0">
+                <div class="sticky top-32 glass-card p-6 rounded-2xl flex flex-col gap-4">
+                    <h3 class="font-headline-md text-primary-fixed-dim mb-2 text-xl">Documentation</h3>
+                    <a href="#introduction" class="text-on-surface hover:text-primary-fixed transition-all font-body-md">Introduction</a>
+                    <a href="#features" class="text-on-surface hover:text-primary-fixed transition-all font-body-md">Key Features</a>
+                    <a href="#installation" class="text-on-surface hover:text-primary-fixed transition-all font-body-md">Installation Guide</a>
+                    <a href="#privacy" class="text-on-surface hover:text-primary-fixed transition-all font-body-md">Privacy & Security</a>
+                </div>
+            </aside>
+
+            <!-- Content -->
+            <div class="flex-1 glass-card p-8 md:p-12 rounded-3xl space-y-12">
+                <section id="introduction">
+                    <h1 class="font-display-lg text-4xl md:text-5xl text-primary mb-6">Introduction</h1>
+                    <p class="font-body-lg text-secondary mb-4 leading-relaxed">
+                        Welcome to the <strong>WorkforceOS</strong> technical documentation. WorkforceOS is a next-generation remote workforce tracking and analytics agent designed to give managers complete visibility into remote team productivity.
+                    </p>
+                    <p class="font-body-lg text-secondary leading-relaxed">
+                        By utilizing lightweight background processes, WorkforceOS runs seamlessly on employee machines to capture vital work metrics without disrupting the workflow.
+                    </p>
+                </section>
+
+                <hr class="border-white/10">
+
+                <section id="features">
+                    <h2 class="font-headline-md text-3xl text-primary-fixed-dim mb-6">Key Features</h2>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-primary-fixed mt-1">timer</span>
+                            <div>
+                                <h4 class="font-bold text-on-surface text-lg">Automated Time Tracking</h4>
+                                <p class="text-on-surface-variant">The agent automatically records active work hours, helping organizations maintain accurate timesheets effortlessly.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-primary-fixed mt-1">screenshot_monitor</span>
+                            <div>
+                                <h4 class="font-bold text-on-surface text-lg">Smart Screenshots</h4>
+                                <p class="text-on-surface-variant">Takes periodic screenshots of the active monitor to visually document work progress. Dual monitor setups are supported natively.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-primary-fixed mt-1">apps</span>
+                            <div>
+                                <h4 class="font-bold text-on-surface text-lg">Activity Logging</h4>
+                                <p class="text-on-surface-variant">Monitors active window titles and application usage to categorize productive vs non-productive time.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-primary-fixed mt-1">snooze</span>
+                            <div>
+                                <h4 class="font-bold text-on-surface text-lg">Idle Detection</h4>
+                                <p class="text-on-surface-variant">Detects periods of inactivity (no mouse or keyboard input) to automatically pause tracking, ensuring accurate work logs.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <hr class="border-white/10">
+
+                <section id="installation">
+                    <h2 class="font-headline-md text-3xl text-primary-fixed-dim mb-6">Installation Guide</h2>
+                    <div class="space-y-6">
+                        <div class="bg-surface-container rounded-xl p-6 border border-white/5">
+                            <h3 class="font-bold text-primary text-xl mb-3">1. Download</h3>
+                            <p class="text-on-surface-variant mb-4">Navigate to the homepage and click the <strong>Download Agent</strong> button to get the latest <code>.exe</code> installer for Windows.</p>
+                        </div>
+                        <div class="bg-surface-container rounded-xl p-6 border border-white/5">
+                            <h3 class="font-bold text-primary text-xl mb-3">2. Install</h3>
+                            <p class="text-on-surface-variant mb-4">Run the downloaded setup file. Follow the on-screen instructions. Administrator privileges may be required to install the tracking services.</p>
+                        </div>
+                        <div class="bg-surface-container rounded-xl p-6 border border-white/5">
+                            <h3 class="font-bold text-primary text-xl mb-3">3. Authenticate</h3>
+                            <p class="text-on-surface-variant">Launch WorkforceOS from your Start Menu. Enter the authentication token or credentials provided by your organization administrator to link your device.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="border-white/10">
+
+                <section id="privacy">
+                    <h2 class="font-headline-md text-3xl text-primary-fixed-dim mb-6">Privacy & Security</h2>
+                    <p class="font-body-lg text-secondary leading-relaxed mb-4">
+                        WorkforceOS is built with security as a foundational principle. All captured data, including screenshots and keystroke telemetry, is encrypted in transit and at rest using AES-256 encryption.
+                    </p>
+                    <p class="font-body-lg text-secondary leading-relaxed">
+                        Data is transmitted securely over HTTPS directly to your organization's designated cloud storage or on-premise servers. WorkforceOS does not store any sensitive data on third-party public clouds without your explicit configuration.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12 px-margin-mobile">
+        <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="font-display-lg text-2xl tracking-tighter text-on-surface-variant opacity-50">WorkforceOS</div>
+            <div class="font-label-mono text-on-surface-variant opacity-50 uppercase tracking-widest text-xs">
+                © 2026 WorkforceOS. Neural Protocol Active.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
