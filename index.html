@@ -250,9 +250,17 @@ animate();
     <img src="favicon.ico?v=2" alt="WorkforceOS Logo" class="w-8 h-8 md:w-10 md:h-10">
     <div class="font-display-lg text-display-lg-mobile md:text-headline-md tracking-tighter text-primary">WorkforceOS</div>
 </div>
-<button onclick="document.getElementById('download-section').scrollIntoView({behavior: 'smooth'})" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-bold scale-95 active:scale-90 transition-transform hover:shadow-[0_0_15px_rgba(0,225,171,0.4)]">
-                Download Agent
-            </button>
+<div class="hidden md:flex items-center gap-8 text-on-surface">
+    <a href="#features" class="hover:text-primary-container transition-colors">Features</a>
+    <a href="docs.html" class="hover:text-primary-container transition-colors">Docs</a>
+    <a href="#pricing" class="hover:text-primary-container transition-colors">Pricing</a>
+</div>
+<div class="flex items-center gap-4">
+    <a href="https://wfh-tracking-k5ap.vercel.app/" class="hidden md:inline-block text-on-surface hover:text-primary-container transition-colors">Web Dashboard</a>
+    <button onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-bold scale-95 active:scale-90 transition-transform hover:shadow-[0_0_15px_rgba(0,225,171,0.4)]">
+        Get Started
+    </button>
+</div>
 </nav>
 </header>
 <main class="relative z-10 pt-32">
@@ -372,40 +380,90 @@ void main() {
                 </p>
 <div class="flex flex-col md:flex-row gap-6 justify-center items-center pt-8">
                     <!-- Main Download Button -->
-                    <button onclick="document.getElementById('download-section').scrollIntoView({behavior: 'smooth'})" class="px-10 py-4 bg-primary-fixed-dim text-on-primary font-bold rounded-xl shadow-[0_0_20px_rgba(0,225,171,0.4)] hover:shadow-[0_0_35px_rgba(0,225,171,0.6)] transition-all active:scale-95 flex items-center gap-2">
-                        <span class="material-symbols-outlined">download</span>
-                        Download Desktop Agent
+                    <button onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})" class="px-10 py-4 bg-primary-fixed-dim text-on-primary font-bold rounded-xl shadow-[0_0_20px_rgba(0,225,171,0.4)] hover:shadow-[0_0_35px_rgba(0,225,171,0.6)] transition-all active:scale-95 flex items-center gap-2">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                        Choose a Plan to Get Started
                     </button>
 </div>
 </div>
 </section>
 
 <!-- Download Section -->
-<section id="download-section" class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
-    <div class="flex flex-col gap-12">
+<section id="pricing" class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+    <div class="space-y-16">
         <div class="space-y-4 text-center">
             <h2 class="font-headline-md text-primary inline-flex items-center gap-3">
-                <span class="material-symbols-outlined">devices</span>
-                Choose Your Platform
+                <span class="material-symbols-outlined">payments</span>
+                Simple, Transparent Pricing
             </h2>
             <p class="font-body-lg text-secondary max-w-2xl mx-auto">
-                Select your operating system below to download and install the WorkforceOS Desktop Agent.
+                Choose the right plan for your team. Scale up as you grow.
             </p>
         </div>
         
-        <div class="flex justify-center mt-8">
-            <!-- Windows Card -->
-            <div class="w-full max-w-sm bg-surface/60 border border-secondary-container/50 backdrop-blur-xl rounded-3xl p-8 hover:bg-surface/80 hover:border-primary-fixed-dim/50 transition-all hover:-translate-y-2 flex flex-col items-center text-center gap-6 group">
-                <div class="w-20 h-20 bg-primary-fixed-dim/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-4xl text-primary-fixed-dim">desktop_windows</span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Free Tier -->
+            <div class="bg-surface/40 border border-secondary-container/20 backdrop-blur-xl rounded-3xl p-8 flex flex-col hover:border-primary-fixed-dim/30 transition-all hover:-translate-y-1">
+                <div class="space-y-4 mb-8">
+                    <h3 class="font-headline-md text-on-surface">Starter</h3>
+                    <div class="flex items-end gap-1">
+                        <span class="font-display-lg text-primary text-5xl">$0</span>
+                        <span class="text-secondary pb-2">/ month</span>
+                    </div>
+                    <p class="text-secondary font-body-md">Perfect for freelancers and solo workers.</p>
                 </div>
-                <div class="space-y-2">
-                    <h3 class="font-title-lg text-on-surface">Windows</h3>
-                    <p class="font-body-md text-secondary">Windows 10, 11 (64-bit)</p>
+                <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> 1 User Limit</li>
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> Basic Time Tracking</li>
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> 24-hour Log Retention</li>
+                </ul>
+                <button onclick="window.location.href='https://github.com/sasiruliyanage2004/WFH-Tracking/releases/download/v1.0.9/WorkforceOS-Agent-Setup.exe'" class="w-full py-4 border-2 border-primary-fixed-dim text-primary-fixed-dim font-bold rounded-xl hover:bg-primary-fixed-dim hover:text-on-primary transition-all flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined">download</span> Download Free (Windows)
+                </button>
+            </div>
+
+            <!-- Pro Tier -->
+            <div class="bg-surface/80 border-2 border-primary-fixed-dim backdrop-blur-xl rounded-3xl p-8 flex flex-col relative scale-105 shadow-[0_0_30px_rgba(0,225,171,0.15)]">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-fixed-dim text-on-primary font-bold px-4 py-1 rounded-full text-sm">
+                    MOST POPULAR
                 </div>
-                <button onclick="window.location.href='https://github.com/sasiruliyanage2004/WFH-Tracking/releases/download/v1.0.9/WorkforceOS-Agent-Setup.exe'" class="w-full py-4 bg-primary-fixed-dim text-on-primary font-bold rounded-xl shadow-[0_0_20px_rgba(0,225,171,0.2)] hover:shadow-[0_0_30px_rgba(0,225,171,0.4)] transition-all active:scale-95 flex items-center justify-center gap-2 mt-auto">
-                    <span class="material-symbols-outlined">download</span>
-                    Download .exe
+                <div class="space-y-4 mb-8">
+                    <h3 class="font-headline-md text-on-surface">Pro</h3>
+                    <div class="flex items-end gap-1">
+                        <span class="font-display-lg text-primary text-5xl">$9</span>
+                        <span class="text-secondary pb-2">/ user / month</span>
+                    </div>
+                    <p class="text-secondary font-body-md">For growing teams requiring full oversight.</p>
+                </div>
+                <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> Unlimited Users</li>
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> Screenshot Telemetry</li>
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> Automated Warning Emails</li>
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> 1 Year Data Retention</li>
+                </ul>
+                <button class="w-full py-4 bg-primary-fixed-dim text-on-primary font-bold rounded-xl shadow-[0_0_20px_rgba(0,225,171,0.2)] hover:shadow-[0_0_30px_rgba(0,225,171,0.4)] transition-all flex justify-center items-center gap-2">
+                    Start Pro Trial
+                </button>
+            </div>
+
+            <!-- Enterprise Tier -->
+            <div class="bg-surface/40 border border-secondary-container/20 backdrop-blur-xl rounded-3xl p-8 flex flex-col hover:border-primary-fixed-dim/30 transition-all hover:-translate-y-1">
+                <div class="space-y-4 mb-8">
+                    <h3 class="font-headline-md text-on-surface">Enterprise</h3>
+                    <div class="flex items-end gap-1">
+                        <span class="font-display-lg text-primary text-5xl">$49</span>
+                        <span class="text-secondary pb-2">/ user / month</span>
+                    </div>
+                    <p class="text-secondary font-body-md">Custom solutions for large organizations.</p>
+                </div>
+                <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> Everything in Pro</li>
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> Custom API Access</li>
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> White-labeling (Your Logo)</li>
+                    <li class="flex items-center gap-3 text-on-surface"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">check_circle</span> Priority 24/7 Support</li>
+                </ul>
+                <button class="w-full py-4 border-2 border-secondary text-secondary font-bold rounded-xl hover:bg-secondary hover:text-on-secondary transition-all flex justify-center items-center gap-2">
+                    Contact Sales
                 </button>
             </div>
         </div>
